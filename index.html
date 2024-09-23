@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Warner Madrid - Nuestro Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>¡Felices 3 años!</h1>
+        <p>Mi amor, nos vamos al Parque Warner de Madrid?.</p>
+    </header>
+
+    <main>
+        <section id="love-section">
+            <h2>Nuestro Amor en el Parque Warner</h2>
+            <div class="hearts">
+                <img src="https://img.freepik.com/foto-gratis/pareja-haciendo-corazon-manos-orilla-mar_23-2148019887.jpg?t=st=1727109514~exp=1727113114~hmac=33d5e10cc1758e14f0247a30dbe68e856b2e5b02186ce9177760788695a05743&w=740" width="100">
+                <img src="https://img.freepik.com/foto-gratis/pareja-haciendo-corazon-manos-orilla-mar_23-2148019887.jpg?t=st=1727109514~exp=1727113114~hmac=33d5e10cc1758e14f0247a30dbe68e856b2e5b02186ce9177760788695a05743&w=740" width="100">
+                <img src="https://img.freepik.com/foto-gratis/pareja-haciendo-corazon-manos-orilla-mar_23-2148019887.jpg?t=st=1727109514~exp=1727113114~hmac=33d5e10cc1758e14f0247a30dbe68e856b2e5b02186ce9177760788695a05743&w=740" alt="Corazón" width="100">
+            </div>
+            <p>Te amo con todo mi corazón. 🤍</p>
+        </section>
+
+        <section id="calendar-section">
+            <h2>Elige una fecha para nuestra visita</h2>
+            <input type="date" id="visit-date" min="2023-10-01" max="2023-11-30">
+        </section>
+    </main>
+
+    <footer>
+        <p>Te amo muchisimo.</p>
+    </footer>
+
+    <script>
+        const dateInput = document.getElementById('visit-date');
+        dateInput.addEventListener('change', (event) => {
+            alert('¡La fecha que elegiste es: ' + event.target.value + '!');
+        });
+    </script>
+</body>
+</html>
